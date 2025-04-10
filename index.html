@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>	Macrokie</title>
+<link href="css/hoja.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+	<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+</head>
+
+<body>
+	<div id="contenedor">
+		<nav>
+  				<div id="logo">
+    				<img src="img/macaron.svg" alt="img">
+  				</div>
+
+  				<div class="hamburger" id="hamburger">
+    				<i class="fas fa-bars"></i>
+ 				 </div>
+
+  				<div class="nav-links" id="nav-links">
+    				<a href="#video">Nosotros</a>
+    				<a href="#sec1">Galería</a>
+    				<a href="#sec3">Menú</a>
+  				</div>
+		</nav>
+	    
+		<main>
+			<video autoplay muted loop id="video">
+				<source src="videos/maca1.mp4" type="video/mp4">
+			</video>
+			<div id="cajatexto">
+				<p class="border"> Macrokie nació de la pasión por los macarons y el diseño, combinando creatividad y sabor en cada detalle. Cada macaron es más que un postre, es una pequeña obra que refleja el equilibrio entre estética y buen gusto. Aquí, cada bocado cuenta una historia de dedicación y amor por lo artesanal.</p>
+				<p class="border"> Desde la selección de los ingredientes hasta la presentación de cada creación, todo está pensado para sorprender y deleitar. La fusión entre el diseño y la repostería convierte cada visita en una experiencia única, donde la textura, el color y el sabor se complementan a la perfección.</p>
+				<p> Más que una pastelería, Macrokie es un espacio para inspirarse, compartir y disfrutar. Cada macaron es una invitación a descubrir nuevas sensaciones, dejando que la creatividad y la pasión por los detalles guíen la experiencia.</p>
+			</div>
+		</main>
+			
+	    <section id="sec1">
+			<article><img src="img/maca1.jpg" alt=""></article>
+			<article><img src="img/maca2.jpg" alt=""></article>
+			<article><img src="img/maca3.jpg" alt=""></article>
+			<article><img src="img/maca4.jpg" alt=""></article>
+			<article><img src="img/maca5.jpg" alt=""></article>
+			<article><img src="img/maca6.jpg" alt=""></article>
+	    </section>
+		<section class="sec2">
+			<div class="contenido">
+            <img src="img/maca7.jpg" alt="Descripción de la imagen" class="imagen">
+            <p class="texto">En Macrokie, cada macaroon es una explosión de sabor y color. Aquí encontrarás una amplia variedad de combinaciones, desde los clásicos como vainilla y chocolate hasta opciones más innovadoras que sorprenden con cada bocado. Cada uno está cuidadosamente elaborado para ofrecer una textura perfecta y un equilibrio irresistible entre dulzura y suavidad.
+
+            Nuestros macaroons no solo destacan por su sabor, sino también por su vibrante paleta de colores. Cada tonalidad refleja la esencia de sus ingredientes, creando una experiencia visual tan atractiva como su delicioso aroma. Ya sea que prefieras tonos suaves y elegantes o colores intensos y llamativos, siempre habrá una opción perfecta para ti.</p>
+            </div>
+		</section>
+		<section id="sec3">
+			<h2 class="menu-title">Nuestro Menú</h2>
+            <div class="carousel">
+       			 <div class="carousel-track">
+            		<img src="img/1mac.jpg" alt="Imagen 1">
+            		<img src="img/2mac.jpg" alt="Imagen 2">
+            		<img src="img/3mac.jpg" alt="Imagen 3">
+            		<img src="img/4mac.jpg" alt="Imagen 4">
+            		<img src="img/5mac.jpg" alt="Imagen 5">
+            		<img src="img/6mac.jpg" alt="Imagen 6">
+            		<img src="img/7mac.jpg" alt="Imagen 7">
+            		<img src="img/8mac.jpg" alt="Imagen 8">
+            		<img src="img/9mac.jpg" alt="Imagen 9">
+            		<img src="img/10mac.jpg" alt="Imagen 10">
+        		</div>
+    		</div>
+		</section>
+	    <footer id="footer">
+			<p>Todos los derechos reservados por Macrokie 2025</p>
+    		<div class="social-icons">
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-facebook-f"></i>
+				<i class="fab fa-tiktok"></i>
+   			</div>
+		</footer>
+    </div>
+	<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  // Cierra el menú al hacer click en un enlace
+  const links = document.querySelectorAll('#nav-links a');
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+    });
+  });
+</script>
+</body>
+</html>
